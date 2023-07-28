@@ -11,3 +11,65 @@
     }
   }
 }
+
+// hero section
+.hero__container {
+  &-content {
+    span {
+      font-family: $font-Montserrat;
+      font-size: 1.2vw;
+      font-weight: 700;
+
+      @include responsive(tab-port) {
+        font-size: 1.8vw;
+      }
+
+      @include responsive(mobile) {
+        font-size: 3vw;
+      }
+    }
+
+    h1 {
+      font-family: $font-poppins;
+      font-weight: 700;
+      font-size: 3vw;
+
+      @include responsive(tab-port) {
+        font-size: 4vw;
+      }
+
+      @include responsive(mobile) {
+        font-size: 6vw;
+      }
+    }
+
+    p {
+      font-family: $font-Montserrat;
+      font-weight: 500;
+      font-size: 1.2vw;
+      letter-spacing: 0.2px;
+
+      @include responsive(tab-port) {
+        font-size: 1.8vw;
+      }
+
+      @include responsive(mobile) {
+        font-size: 3vw;
+      }
+    }
+
+    &-btns {
+      a {
+        font-size: 1.3vw;
+
+        @include responsive(tab-port) {
+          font-size: 1.7vw;
+        }
+
+        @include responsive(mobile) {
+          font-size: 2.8vw;
+        }
+      }
+    }
+  }
+}

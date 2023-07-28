@@ -11,6 +11,49 @@
   font-family: "Montserrat", sans-serif;
   font-size: 1rem; }
 
+.hero__container-content span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 700; }
+  @media screen and (max-width: 56.25em) {
+    .hero__container-content span {
+      font-size: 1.8vw; } }
+  @media screen and (max-width: 37.5em) {
+    .hero__container-content span {
+      font-size: 3vw; } }
+
+.hero__container-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 3vw; }
+  @media screen and (max-width: 56.25em) {
+    .hero__container-content h1 {
+      font-size: 4vw; } }
+  @media screen and (max-width: 37.5em) {
+    .hero__container-content h1 {
+      font-size: 6vw; } }
+
+.hero__container-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  letter-spacing: 0.2px; }
+  @media screen and (max-width: 56.25em) {
+    .hero__container-content p {
+      font-size: 1.8vw; } }
+  @media screen and (max-width: 37.5em) {
+    .hero__container-content p {
+      font-size: 3vw; } }
+
+.hero__container-content-btns a {
+  font-size: 1.3vw; }
+  @media screen and (max-width: 56.25em) {
+    .hero__container-content-btns a {
+      font-size: 1.7vw; } }
+  @media screen and (max-width: 37.5em) {
+    .hero__container-content-btns a {
+      font-size: 2.8vw; } }
+
 .u-active {
   color: #fa4a0c !important; }
 
@@ -27,6 +70,21 @@
 
 .u-hidden {
   display: none; }
+
+.btn {
+  display: block;
+  padding: 1rem 3rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
+
+.btn-primary {
+  background-color: #fa4a0c; }
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #fff; }
 
 .navbar {
   display: flex;
@@ -115,15 +173,18 @@
       background-color: #fff; }
     .navbar__icon-bg {
       width: 0;
-      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1); }
+      opacity: 0;
+      transition: all 4s cubic-bezier(0.19, 1, 0.22, 1); }
     .navbar__icon-checkbox:checked ~ .navbar__icon-bg {
+      opacity: 1;
       display: block;
       width: 100vw;
       background-color: #fa4a0c;
       height: 100vh;
       position: fixed;
       top: 0;
-      left: 0; }
+      left: 0;
+      transition: all 4s cubic-bezier(0.19, 1, 0.22, 1); }
     .navbar__icon-mobile-menu a {
       display: block;
       text-decoration: none;
@@ -138,5 +199,39 @@
       .navbar__icon-mobile-menu a:hover {
         background-position: 100%; }
 
+.hero__container {
+  height: calc(100vh - 102px);
+  width: 100vw;
+  background-image: url(../../images/header-bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backface-visibility: hidden; }
+  .hero__container-content {
+    text-align: center;
+    padding: 4.5rem 3rem 0;
+    color: #fff; }
+    .hero__container-content span {
+      color: #f6f6f6; }
+    .hero__container-content h1 {
+      margin: 1rem 0; }
+    .hero__container-content p {
+      color: #f6f6f6;
+      margin-bottom: 2rem; }
+    .hero__container-content-btns a {
+      border-radius: 36px; }
+      @media screen and (max-width: 37.5em) {
+        .hero__container-content-btns a {
+          padding: 1rem 2rem; } }
+    .hero__container-content-btns a:last-child {
+      margin-left: 2.4rem; }
+      @media screen and (max-width: 37.5em) {
+        .hero__container-content-btns a:last-child {
+          margin-left: 1rem; } }
+      .hero__container-content-btns a:last-child:hover {
+        background-color: #fa4a0c;
+        border: 1px solid #fa4a0c;
+        transition: all 1s; }
+
 header {
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }

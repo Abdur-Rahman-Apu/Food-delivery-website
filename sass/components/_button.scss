@@ -1,0 +1,17 @@
+.btn {
+  display: block;
+  padding: 1rem 3rem;
+  color: $color-white;
+  text-decoration: none;
+  font-family: $font-Montserrat;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid $color-white;
+}
