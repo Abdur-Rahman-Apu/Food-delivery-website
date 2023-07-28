@@ -1,7 +1,6 @@
-@mixin flexCenter {
+@mixin flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  @content;
 }
 
 // MEDIA QUERY

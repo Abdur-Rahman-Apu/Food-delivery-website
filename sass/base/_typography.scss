@@ -1,0 +1,13 @@
+.navbar {
+  &__nav a {
+    font-family: $font-Montserrat;
+    font-weight: 600;
+  }
+
+  &__icon {
+    &-mobile-menu a {
+      font-family: $font-Montserrat;
+      font-size: 1rem;
+    }
+  }
+}

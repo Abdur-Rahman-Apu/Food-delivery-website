@@ -10,8 +10,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@500;600;700&family=Poppins:wght@600;700&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -19,7 +24,45 @@
 </head>
 
 <body>
-    <h1>Hello world</h1>
+
+    <!-- header start  -->
+    <header>
+
+        <!-- navbar start  -->
+
+        <div class="navbar">
+            <div class="navbar__logo u-flex-center">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+
+            <nav class="navbar__nav">
+                <a class="u-active" href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Faq</a>
+                <a href="#">Contact</a>
+            </nav>
+
+            <div class="navbar__icon u-hidden u-flex-center">
+                <input type="checkbox" id="icon" class="navbar__icon-checkbox u-hidden">
+                <label for="icon" class="navbar__icon-label">
+                    <span class="navbar__icon-icon"></span>
+                </label>
+
+                <div class="navbar__icon-bg  ">
+                    <div class="navbar__icon-mobile-menu u-abs-center">
+                        <a href="#">Home</a>
+                        <a href="#">Product</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </nav>
+
+    </header>
 </body>
 
 </html>
