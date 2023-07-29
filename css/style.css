@@ -239,10 +239,11 @@
         display: block; } }
     .navbar__icon-label {
       display: block;
-      z-index: 3000;
+      z-index: 30000000;
       width: 35px;
       height: 25px;
-      position: relative; }
+      position: relative;
+      cursor: pointer; }
     .navbar__icon-icon, .navbar__icon-icon::before, .navbar__icon-icon::after {
       display: inline-block;
       width: 100%;
@@ -282,7 +283,8 @@
       position: fixed;
       top: 0;
       left: 0;
-      transition: all 4s cubic-bezier(0.19, 1, 0.22, 1); }
+      transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 3000; }
     .navbar__icon-mobile-menu a {
       display: block;
       text-decoration: none;

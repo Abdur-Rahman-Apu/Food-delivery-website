@@ -85,10 +85,11 @@
 
     &-label {
       display: block;
-      z-index: 3000;
+      z-index: 30000000;
       width: 35px;
       height: 25px;
       position: relative;
+      cursor: pointer;
     }
 
     &-icon {
@@ -149,6 +150,7 @@
       top: 0;
       left: 0;
       transition: all 4s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: 3000;
     }
 
     &-mobile-menu a {
