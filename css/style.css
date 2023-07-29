@@ -58,33 +58,49 @@
   font-size: 2.3vw;
   font-family: "Poppins", sans-serif;
   font-weight: 600; }
+  @media screen and (max-width: 56.25em) {
+    .main__app-work-heading {
+      font-size: 3.5vw; } }
   @media screen and (max-width: 37.5em) {
     .main__app-work-heading {
-      font-size: 4.5vw; } }
+      font-size: 6vw; } }
+
+@media screen and (max-width: 56.25em) {
+  .main__app-work-container-content {
+    margin-bottom: 5rem; } }
 
 .main__app-work-container-content span {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2vw; }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 56.25em) {
     .main__app-work-container-content span {
       font-size: 2.5vw; } }
+  @media screen and (max-width: 37.5em) {
+    .main__app-work-container-content span {
+      font-size: 3.5vw; } }
 
 .main__app-work-container-content h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2.5vw; }
-  @media screen and (max-width: 37.5em) {
+  @media screen and (max-width: 56.25em) {
     .main__app-work-container-content h1 {
       font-size: 4vw; } }
+  @media screen and (max-width: 37.5em) {
+    .main__app-work-container-content h1 {
+      font-size: 5vw; } }
 
 .main__app-work-container-content p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.5vw; }
+  @media screen and (max-width: 56.25em) {
+    .main__app-work-container-content p {
+      font-size: 2vw; } }
   @media screen and (max-width: 37.5em) {
     .main__app-work-container-content p {
-      font-size: 2.5vw; } }
+      font-size: 3vw; } }
 
 .main__download-section-heading {
   font-family: "Montserrat", sans-serif;
@@ -93,6 +109,9 @@
   @media screen and (max-width: 56.25em) {
     .main__download-section-heading {
       font-size: 3.5vw; } }
+  @media screen and (max-width: 37.5em) {
+    .main__download-section-heading {
+      font-size: 6vw; } }
 
 .main__download-section p {
   font-family: "Montserrat", sans-serif;
@@ -102,6 +121,23 @@
   @media screen and (max-width: 56.25em) {
     .main__download-section p {
       font-size: 1.8vw; } }
+  @media screen and (max-width: 37.5em) {
+    .main__download-section p {
+      font-size: 2.5vw; } }
+
+@media screen and (max-width: 37.5em) {
+  .main__download-section .btns a {
+    font-size: 3.5vw; } }
+
+.footer__section-copyright {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw; }
+  @media screen and (max-width: 56.25em) {
+    .footer__section-copyright {
+      font-size: 1.8vw; } }
+  @media screen and (max-width: 37.5em) {
+    .footer__section-copyright {
+      font-size: 3vw; } }
 
 .u-active {
   color: #fa4a0c !important; }
@@ -325,27 +361,32 @@
 
 .main__app-work {
   padding: 3rem 5.5rem 0rem; }
+  @media screen and (max-width: 37.5em) {
+    .main__app-work {
+      padding: 3rem 1rem 0; } }
   .main__app-work-heading {
     text-align: center; }
   .main__app-work-container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    @media screen and (max-width: 37.5em) {
+    @media screen and (max-width: 56.25em) {
       .main__app-work-container {
         flex-direction: column; } }
     .main__app-work-container-img {
       flex-basis: 50%; }
-      @media screen and (max-width: 37.5em) {
+      @media screen and (max-width: 56.25em) {
         .main__app-work-container-img {
           flex-basis: 100%; } }
       .main__app-work-container-img img {
-        width: 100%; }
+        width: 100%;
+        object-fit: cover; }
     .main__app-work-container-content {
       flex-basis: 50%; }
-      @media screen and (max-width: 37.5em) {
+      @media screen and (max-width: 56.25em) {
         .main__app-work-container-content {
-          flex-basis: 100%; } }
+          flex-basis: 100%;
+          text-align: center; } }
       .main__app-work-container-content span {
         color: #fa4a0c; }
       .main__app-work-container-content h1 {
@@ -369,10 +410,59 @@
       margin-top: 3rem; } }
   .main__download-section p {
     margin: 3rem 0; }
+    @media screen and (max-width: 37.5em) {
+      .main__download-section p {
+        margin: 2rem 0; } }
   .main__download-section .btns .btn {
     border-radius: 10px; }
+    @media screen and (max-width: 37.5em) {
+      .main__download-section .btns .btn {
+        padding: 1rem 2rem; } }
   .main__download-section .btns a:first-child {
     margin-right: 20px; }
+  .main__download-section .btns a:last-child:hover {
+    background-color: #fa4a0c;
+    border: 0;
+    transition: all 0.5s ease-in; }
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem; }
+  @media screen and (max-width: 56.25em) {
+    .footer__section {
+      padding: 0 3rem; } }
+  @media screen and (max-width: 37.5em) {
+    .footer__section {
+      padding: 2rem 3rem; } }
+  @media screen and (max-width: 37.5em) {
+    .footer__section {
+      flex-direction: column;
+      justify-content: space-evenly; } }
+  .footer__section-logo img {
+    width: 18vw; }
+    @media screen and (max-width: 56.25em) {
+      .footer__section-logo img {
+        width: 30vw; } }
+    @media screen and (max-width: 37.5em) {
+      .footer__section-logo img {
+        width: 50vw; } }
+  .footer__section-media div img {
+    width: 2.5vw; }
+    @media screen and (max-width: 56.25em) {
+      .footer__section-media div img {
+        width: 3.5vw; } }
+    @media screen and (max-width: 37.5em) {
+      .footer__section-media div img {
+        width: 6.5vw; } }
+    .footer__section-media div img:not(:last-child) {
+      margin-right: 1rem; }
+  .footer__section-copyright {
+    color: #5c5c5c; }
+    @media screen and (max-width: 37.5em) {
+      .footer__section-copyright {
+        margin: 2rem 0; } }
 
 header {
   width: 100%;
@@ -385,7 +475,7 @@ main {
   overflow: hidden; }
 
 footer {
-  height: 200px;
+  min-height: 200px;
   display: flex;
   justify-content: space-between;
   align-items: center; }

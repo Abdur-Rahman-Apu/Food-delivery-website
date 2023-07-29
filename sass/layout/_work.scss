@@ -1,5 +1,10 @@
 .main__app-work {
   padding: 3rem 5.5rem 0rem;
+
+  @include responsive(mobile) {
+    padding: 3rem 1rem 0;
+  }
+
   &-heading {
     text-align: center;
   }
@@ -9,27 +14,29 @@
     justify-content: space-between;
     align-items: center;
 
-    @include responsive(mobile) {
+    @include responsive(tab-port) {
       flex-direction: column;
     }
 
     &-img {
       flex-basis: 50%;
 
-      @include responsive(mobile) {
+      @include responsive(tab-port) {
         flex-basis: 100%;
       }
 
       img {
         width: 100%;
+        object-fit: cover;
       }
     }
 
     &-content {
       flex-basis: 50%;
 
-      @include responsive(mobile) {
+      @include responsive(tab-port) {
         flex-basis: 100%;
+        text-align: center;
       }
 
       span {

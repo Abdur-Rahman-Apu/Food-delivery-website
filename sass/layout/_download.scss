@@ -16,15 +16,31 @@
 
   p {
     margin: 3rem 0;
+
+    @include responsive(mobile) {
+      margin: 2rem 0;
+    }
   }
 
   .btns {
     .btn {
       border-radius: 10px;
+
+      @include responsive(mobile) {
+        padding: 1rem 2rem;
+      }
     }
 
     a:first-child {
       margin-right: 20px;
+    }
+
+    a:last-child {
+      &:hover {
+        background-color: $color-primary;
+        border: 0;
+        transition: all 0.5s ease-in;
+      }
     }
   }
 }

@@ -82,20 +82,30 @@
     font-family: $font-poppins;
     font-weight: 600;
 
+    @include responsive(tab-port) {
+      font-size: 3.5vw;
+    }
     @include responsive(mobile) {
-      font-size: 4.5vw;
+      font-size: 6vw;
     }
   }
 
   &-container {
     &-content {
+      @include responsive(tab-port) {
+        margin-bottom: 5rem;
+      }
       span {
         font-family: $font-Montserrat;
         font-weight: 700;
         font-size: 1.2vw;
 
-        @include responsive(mobile) {
+        @include responsive(tab-port) {
           font-size: 2.5vw;
+        }
+
+        @include responsive(mobile) {
+          font-size: 3.5vw;
         }
       }
 
@@ -104,8 +114,12 @@
         font-weight: 700;
         font-size: 2.5vw;
 
-        @include responsive(mobile) {
+        @include responsive(tab-port) {
           font-size: 4vw;
+        }
+
+        @include responsive(mobile) {
+          font-size: 5vw;
         }
       }
 
@@ -114,8 +128,11 @@
         font-weight: 500;
         font-size: 1.5vw;
 
+        @include responsive(tab-port) {
+          font-size: 2vw;
+        }
         @include responsive(mobile) {
-          font-size: 2.5vw;
+          font-size: 3vw;
         }
       }
     }
@@ -133,6 +150,9 @@
     @include responsive(tab-port) {
       font-size: 3.5vw;
     }
+    @include responsive(mobile) {
+      font-size: 6vw;
+    }
   }
 
   p {
@@ -143,6 +163,34 @@
 
     @include responsive(tab-port) {
       font-size: 1.8vw;
+    }
+    @include responsive(mobile) {
+      font-size: 2.5vw;
+    }
+  }
+
+  .btns {
+    a {
+      @include responsive(mobile) {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
+
+// footer section
+
+.footer__section {
+  &-copyright {
+    font-family: $font-roboto;
+    font-size: 1.2vw;
+
+    @include responsive(tab-port) {
+      font-size: 1.8vw;
+    }
+
+    @include responsive(mobile) {
+      font-size: 3vw;
     }
   }
 }
