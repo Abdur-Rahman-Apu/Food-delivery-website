@@ -121,3 +121,28 @@
     }
   }
 }
+
+// main download section
+
+.main__download-section {
+  &-heading {
+    font-family: $font-Montserrat;
+    font-weight: 700;
+    font-size: 2.5vw;
+
+    @include responsive(tab-port) {
+      font-size: 3.5vw;
+    }
+  }
+
+  p {
+    font-family: $font-Montserrat;
+    font-weight: 500;
+    font-size: 1.2vw;
+    letter-spacing: 0.2px;
+
+    @include responsive(tab-port) {
+      font-size: 1.8vw;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.main__download-section {
+  @include flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  height: 516px;
+  background-image: url(../../images/bg-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+
+  @include responsive(tab-port) {
+    margin-top: 3rem;
+  }
+
+  p {
+    margin: 3rem 0;
+  }
+
+  .btns {
+    .btn {
+      border-radius: 10px;
+    }
+
+    a:first-child {
+      margin-right: 20px;
+    }
+  }
+}

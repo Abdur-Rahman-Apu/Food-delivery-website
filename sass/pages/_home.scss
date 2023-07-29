@@ -9,3 +9,11 @@ main {
   width: 100%;
   overflow: hidden;
 }
+
+footer {
+  height: 200px;
+  @include flex {
+    justify-content: space-between;
+    align-items: center;
+  }
+}

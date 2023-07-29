@@ -86,6 +86,23 @@
     .main__app-work-container-content p {
       font-size: 2.5vw; } }
 
+.main__download-section-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw; }
+  @media screen and (max-width: 56.25em) {
+    .main__download-section-heading {
+      font-size: 3.5vw; } }
+
+.main__download-section p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  letter-spacing: 0.2px; }
+  @media screen and (max-width: 56.25em) {
+    .main__download-section p {
+      font-size: 1.8vw; } }
+
 .u-active {
   color: #fa4a0c !important; }
 
@@ -337,6 +354,26 @@
       .main__app-work-container-content p {
         color: #737373; }
 
+.main__download-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 516px;
+  background-image: url(../../images/bg-image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff; }
+  @media screen and (max-width: 56.25em) {
+    .main__download-section {
+      margin-top: 3rem; } }
+  .main__download-section p {
+    margin: 3rem 0; }
+  .main__download-section .btns .btn {
+    border-radius: 10px; }
+  .main__download-section .btns a:first-child {
+    margin-right: 20px; }
+
 header {
   width: 100%;
   height: fit-content;
@@ -346,3 +383,9 @@ header {
 main {
   width: 100%;
   overflow: hidden; }
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
