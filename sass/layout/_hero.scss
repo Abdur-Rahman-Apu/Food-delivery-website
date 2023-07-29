@@ -26,20 +26,29 @@
     span {
       color: $color-secondary;
       animation-name: moveLeftToRight;
-      animation-duration: 4s;
+      animation-duration: 1s;
       animation-timing-function: ease-in;
       display: block;
     }
 
     h1 {
       margin: 1rem 0;
+      animation-name: moveRightToLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in;
     }
     p {
       color: $color-secondary;
       margin-bottom: 2rem;
+      animation-name: zoomIn;
+      animation-duration: 2s;
+      animation-timing-function: ease-in;
     }
 
     &-btns {
+      animation-name: moveBottomToTop;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out;
       a {
         border-radius: 36px;
 

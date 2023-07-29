@@ -1,12 +1,38 @@
 @keyframes moveLeftToRight {
   0% {
     opacity: 0;
-    transform: translateX(-5rem); }
+    transform: translateX(-1rem); }
   80% {
-    opacity: 1;
-    transform: translateX(1rem); }
+    opacity: 1; }
   100% {
     transform: translateX(0); } }
+
+@keyframes moveRightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem); }
+  50% {
+    opacity: 1; }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes moveBottomToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
 
 * {
   margin: 0;
@@ -322,28 +348,38 @@
     .hero__container-content span {
       color: #f6f6f6;
       animation-name: moveLeftToRight;
-      animation-duration: 4s;
+      animation-duration: 1s;
       animation-timing-function: ease-in;
       display: block; }
     .hero__container-content h1 {
-      margin: 1rem 0; }
+      margin: 1rem 0;
+      animation-name: moveRightToLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-in; }
     .hero__container-content p {
       color: #f6f6f6;
-      margin-bottom: 2rem; }
-    .hero__container-content-btns a {
-      border-radius: 36px; }
-      @media screen and (max-width: 37.5em) {
-        .hero__container-content-btns a {
-          padding: 1rem 2rem; } }
-    .hero__container-content-btns a:last-child {
-      margin-left: 2.4rem; }
-      @media screen and (max-width: 37.5em) {
-        .hero__container-content-btns a:last-child {
-          margin-left: 1rem; } }
-      .hero__container-content-btns a:last-child:hover {
-        background-color: #fa4a0c;
-        border: 1px solid #fa4a0c;
-        transition: all 1s; }
+      margin-bottom: 2rem;
+      animation-name: zoomIn;
+      animation-duration: 2s;
+      animation-timing-function: ease-in; }
+    .hero__container-content-btns {
+      animation-name: moveBottomToTop;
+      animation-duration: 1s;
+      animation-timing-function: ease-in-out; }
+      .hero__container-content-btns a {
+        border-radius: 36px; }
+        @media screen and (max-width: 37.5em) {
+          .hero__container-content-btns a {
+            padding: 1rem 2rem; } }
+      .hero__container-content-btns a:last-child {
+        margin-left: 2.4rem; }
+        @media screen and (max-width: 37.5em) {
+          .hero__container-content-btns a:last-child {
+            margin-left: 1rem; } }
+        .hero__container-content-btns a:last-child:hover {
+          background-color: #fa4a0c;
+          border: 1px solid #fa4a0c;
+          transition: all 1s; }
 
 .header__mobile-section {
   position: relative;
