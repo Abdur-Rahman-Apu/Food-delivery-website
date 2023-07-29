@@ -436,7 +436,7 @@
     margin-right: 20px; }
   .main__download-section .btns a:last-child:hover {
     background-color: #fa4a0c;
-    border: 0;
+    border: 1px solid #fa4a0c;
     transition: all 0.5s ease-in; }
 
 .footer__section {

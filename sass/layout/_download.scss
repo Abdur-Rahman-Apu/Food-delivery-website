@@ -38,7 +38,7 @@
     a:last-child {
       &:hover {
         background-color: $color-primary;
-        border: 0;
+        border: 1px solid $color-primary;
         transition: all 0.5s ease-in;
       }
     }
