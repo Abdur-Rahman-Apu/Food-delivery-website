@@ -49,6 +49,8 @@
       animation-name: moveBottomToTop;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
+      position: relative;
+      z-index: 4000;
 
       @media screen and (max-width: 300px) {
         flex-direction: column;
@@ -68,18 +70,18 @@
       a:last-child {
         margin-left: 2.4rem;
 
-        @include responsive(mobile) {
-          margin-left: 1rem;
-
-          @media screen and (max-width: 300px) {
-            margin-left: 0;
-          }
-        }
-
         &:hover {
           background-color: $color-primary;
           border: 1px solid $color-primary;
           transition: all 1s;
+        }
+
+        @include responsive(mobile) {
+          margin-left: 1rem;
+        }
+
+        @media screen and (max-width: 300px) {
+          margin-left: 0;
         }
       }
     }

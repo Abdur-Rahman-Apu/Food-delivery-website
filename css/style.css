@@ -365,7 +365,9 @@
     .hero__container-content-btns {
       animation-name: moveBottomToTop;
       animation-duration: 1s;
-      animation-timing-function: ease-in-out; }
+      animation-timing-function: ease-in-out;
+      position: relative;
+      z-index: 4000; }
       @media screen and (max-width: 300px) {
         .hero__container-content-btns {
           flex-direction: column; } }
@@ -380,16 +382,16 @@
             margin-bottom: 1rem; } }
       .hero__container-content-btns a:last-child {
         margin-left: 2.4rem; }
-        @media screen and (max-width: 37.5em) {
-          .hero__container-content-btns a:last-child {
-            margin-left: 1rem; } }
-  @media screen and (max-width: 37.5em) and (max-width: 300px) {
-    .hero__container-content-btns a:last-child {
-      margin-left: 0; } }
         .hero__container-content-btns a:last-child:hover {
           background-color: #fa4a0c;
           border: 1px solid #fa4a0c;
           transition: all 1s; }
+        @media screen and (max-width: 37.5em) {
+          .hero__container-content-btns a:last-child {
+            margin-left: 1rem; } }
+        @media screen and (max-width: 300px) {
+          .hero__container-content-btns a:last-child {
+            margin-left: 0; } }
 
 .header__mobile-section {
   position: relative;
