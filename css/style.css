@@ -1,3 +1,13 @@
+@keyframes moveLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem); }
+  80% {
+    opacity: 1;
+    transform: translateX(1rem); }
+  100% {
+    transform: translateX(0); } }
+
 * {
   margin: 0;
   padding: 0;
@@ -308,7 +318,11 @@
       .hero__container-content {
         padding-bottom: 4rem; } }
     .hero__container-content span {
-      color: #f6f6f6; }
+      color: #f6f6f6;
+      animation-name: moveLeftToRight;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      display: block; }
     .hero__container-content h1 {
       margin: 1rem 0; }
     .hero__container-content p {

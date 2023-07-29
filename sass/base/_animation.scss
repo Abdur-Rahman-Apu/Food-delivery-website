@@ -1,0 +1,16 @@
+// move left to right
+
+@keyframes moveLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

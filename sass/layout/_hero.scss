@@ -25,6 +25,10 @@
 
     span {
       color: $color-secondary;
+      animation-name: moveLeftToRight;
+      animation-duration: 4s;
+      animation-timing-function: ease-in;
+      display: block;
     }
 
     h1 {
