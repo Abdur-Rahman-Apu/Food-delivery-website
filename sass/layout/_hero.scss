@@ -49,11 +49,20 @@
       animation-name: moveBottomToTop;
       animation-duration: 1s;
       animation-timing-function: ease-in-out;
+
+      @media screen and (max-width: 300px) {
+        flex-direction: column;
+      }
       a {
         border-radius: 36px;
 
         @include responsive(mobile) {
           padding: 1rem 2rem;
+        }
+
+        @media screen and (max-width: 300px) {
+          padding: 0.8rem 1rem;
+          margin-bottom: 1rem;
         }
       }
       a:last-child {
@@ -61,6 +70,10 @@
 
         @include responsive(mobile) {
           margin-left: 1rem;
+
+          @media screen and (max-width: 300px) {
+            margin-left: 0;
+          }
         }
 
         &:hover {

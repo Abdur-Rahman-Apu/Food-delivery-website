@@ -366,16 +366,26 @@
       animation-name: moveBottomToTop;
       animation-duration: 1s;
       animation-timing-function: ease-in-out; }
+      @media screen and (max-width: 300px) {
+        .hero__container-content-btns {
+          flex-direction: column; } }
       .hero__container-content-btns a {
         border-radius: 36px; }
         @media screen and (max-width: 37.5em) {
           .hero__container-content-btns a {
             padding: 1rem 2rem; } }
+        @media screen and (max-width: 300px) {
+          .hero__container-content-btns a {
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem; } }
       .hero__container-content-btns a:last-child {
         margin-left: 2.4rem; }
         @media screen and (max-width: 37.5em) {
           .hero__container-content-btns a:last-child {
             margin-left: 1rem; } }
+  @media screen and (max-width: 37.5em) and (max-width: 300px) {
+    .hero__container-content-btns a:last-child {
+      margin-left: 0; } }
         .hero__container-content-btns a:last-child:hover {
           background-color: #fa4a0c;
           border: 1px solid #fa4a0c;
@@ -387,6 +397,9 @@
   z-index: 1000; }
   .header__mobile-section-container {
     margin-right: 90px; }
+    @media screen and (max-width: 300px) {
+      .header__mobile-section-container {
+        margin-right: 40px; } }
     .header__mobile-section-container-img-1, .header__mobile-section-container-img-2 {
       position: relative;
       z-index: 2000;

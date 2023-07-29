@@ -6,6 +6,10 @@
   &-container {
     margin-right: 90px;
 
+    @media screen and (max-width: 300px) {
+      margin-right: 40px;
+    }
+
     &-img-1,
     &-img-2 {
       position: relative;
