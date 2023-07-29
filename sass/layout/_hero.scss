@@ -1,15 +1,29 @@
 .hero__container {
   height: calc(100vh - 102px);
-  width: 100vw;
+  width: 100%;
   background-image: url(../../images/header-bg-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   backface-visibility: hidden;
+  position: relative;
+  z-index: 100;
+
+  @include responsive(tab-port) {
+    height: 45vh;
+  }
+
+  @include responsive(mobile) {
+    height: fit-content;
+  }
 
   &-content {
     text-align: center;
     padding: 4.5rem 3rem 0;
     color: $color-white;
+
+    @include responsive(mobile) {
+      padding-bottom: 4rem;
+    }
 
     span {
       color: $color-secondary;

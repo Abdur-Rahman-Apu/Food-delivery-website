@@ -6,6 +6,7 @@
 
   box-shadow: 0 0 3px rgba($color-black, 0.5);
   padding: 0 40px 0 70px;
+  width: 100%;
 
   @include responsive(mobile) {
     padding-left: 10px;
