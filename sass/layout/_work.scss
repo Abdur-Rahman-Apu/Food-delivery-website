@@ -1,0 +1,49 @@
+.main__app-work {
+  padding: 3rem 5.5rem 0rem;
+  &-heading {
+    text-align: center;
+  }
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(mobile) {
+      flex-direction: column;
+    }
+
+    &-img {
+      flex-basis: 50%;
+
+      @include responsive(mobile) {
+        flex-basis: 100%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-content {
+      flex-basis: 50%;
+
+      @include responsive(mobile) {
+        flex-basis: 100%;
+      }
+
+      span {
+        color: $color-primary;
+      }
+
+      h1 {
+        color: $color-tertiary;
+        margin: 1.4rem 0;
+      }
+
+      p {
+        color: $color-gray;
+      }
+    }
+  }
+}

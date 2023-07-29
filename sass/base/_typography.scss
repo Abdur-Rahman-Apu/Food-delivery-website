@@ -73,3 +73,51 @@
     }
   }
 }
+
+// main app work
+
+.main__app-work {
+  &-heading {
+    font-size: 2.3vw;
+    font-family: $font-poppins;
+    font-weight: 600;
+
+    @include responsive(mobile) {
+      font-size: 4.5vw;
+    }
+  }
+
+  &-container {
+    &-content {
+      span {
+        font-family: $font-Montserrat;
+        font-weight: 700;
+        font-size: 1.2vw;
+
+        @include responsive(mobile) {
+          font-size: 2.5vw;
+        }
+      }
+
+      h1 {
+        font-family: $font-Montserrat;
+        font-weight: 700;
+        font-size: 2.5vw;
+
+        @include responsive(mobile) {
+          font-size: 4vw;
+        }
+      }
+
+      p {
+        font-family: $font-Montserrat;
+        font-weight: 500;
+        font-size: 1.5vw;
+
+        @include responsive(mobile) {
+          font-size: 2.5vw;
+        }
+      }
+    }
+  }
+}
